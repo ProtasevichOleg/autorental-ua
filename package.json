@@ -1,8 +1,8 @@
 {
-  "name": "protasevych-react-template",
+  "name": "Auto Rental UA",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://protasevicholeg.github.io/protasevych-react-template/",
+  "homepage": "https://protasevicholeg.github.io/autorental-ua/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
