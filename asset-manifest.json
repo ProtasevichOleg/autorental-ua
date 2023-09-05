@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/autorental-ua/static/css/main.7acaea2f.css",
-    "main.js": "/autorental-ua/static/js/main.07d3183d.js",
+    "main.js": "/autorental-ua/static/js/main.370d81cd.js",
     "index.html": "/autorental-ua/index.html",
     "main.7acaea2f.css.map": "/autorental-ua/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/autorental-ua/static/js/main.07d3183d.js.map"
+    "main.370d81cd.js.map": "/autorental-ua/static/js/main.370d81cd.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.370d81cd.js"
   ]
 }
