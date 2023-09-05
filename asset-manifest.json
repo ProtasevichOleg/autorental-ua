@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/protasevych-react-template/static/css/main.7acaea2f.css",
-    "main.js": "/protasevych-react-template/static/js/main.07d3183d.js",
-    "index.html": "/protasevych-react-template/index.html",
-    "main.7acaea2f.css.map": "/protasevych-react-template/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/protasevych-react-template/static/js/main.07d3183d.js.map"
+    "main.css": "/autorental-ua/static/css/main.7acaea2f.css",
+    "main.js": "/autorental-ua/static/js/main.07d3183d.js",
+    "index.html": "/autorental-ua/index.html",
+    "main.7acaea2f.css.map": "/autorental-ua/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/autorental-ua/static/js/main.07d3183d.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
