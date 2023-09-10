@@ -1,13 +1,23 @@
 {
   "files": {
-    "main.css": "/autorental-ua/static/css/main.7acaea2f.css",
-    "main.js": "/autorental-ua/static/js/main.370d81cd.js",
+    "main.css": "/autorental-ua/static/css/main.c58178e7.css",
+    "main.js": "/autorental-ua/static/js/main.62b2e69a.js",
+    "static/js/983.3cd7352c.chunk.js": "/autorental-ua/static/js/983.3cd7352c.chunk.js",
+    "static/js/755.9f51bb94.chunk.js": "/autorental-ua/static/js/755.9f51bb94.chunk.js",
+    "static/js/697.a29bb096.chunk.js": "/autorental-ua/static/js/697.a29bb096.chunk.js",
+    "static/media/Manrope-SemiBold.ttf": "/autorental-ua/static/media/Manrope-SemiBold.310f108cc524df0e5ffc.ttf",
+    "static/media/Manrope-Medium.ttf": "/autorental-ua/static/media/Manrope-Medium.08894ccb04665d1a9d53.ttf",
+    "static/media/Manrope-Regular.ttf": "/autorental-ua/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
+    "static/media/sprite.svg": "/autorental-ua/static/media/sprite.3cebc0c8955b08bb020a2eaafb59ec96.svg",
     "index.html": "/autorental-ua/index.html",
-    "main.7acaea2f.css.map": "/autorental-ua/static/css/main.7acaea2f.css.map",
-    "main.370d81cd.js.map": "/autorental-ua/static/js/main.370d81cd.js.map"
+    "main.c58178e7.css.map": "/autorental-ua/static/css/main.c58178e7.css.map",
+    "main.62b2e69a.js.map": "/autorental-ua/static/js/main.62b2e69a.js.map",
+    "983.3cd7352c.chunk.js.map": "/autorental-ua/static/js/983.3cd7352c.chunk.js.map",
+    "755.9f51bb94.chunk.js.map": "/autorental-ua/static/js/755.9f51bb94.chunk.js.map",
+    "697.a29bb096.chunk.js.map": "/autorental-ua/static/js/697.a29bb096.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.370d81cd.js"
+    "static/css/main.c58178e7.css",
+    "static/js/main.62b2e69a.js"
   ]
 }
