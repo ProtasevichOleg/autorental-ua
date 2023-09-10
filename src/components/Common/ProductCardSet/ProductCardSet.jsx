@@ -1,12 +1,27 @@
 import { useCallback, useEffect, useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import { StyledCardSet } from './ProductCardSet.styled';
-import cars from 'assets/jsons/cars.json';
+// import cars from 'assets/jsons/cars.json';
+import { fetchCars } from 'api/api';
 import Modal from '../Modal/Modal';
 
 const ProductCardSet = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCar, setSelectedCar] = useState(null);
+  const [cars, setCars] = useState([]);
+
+  useEffect(() => {
+    const loadCars = async () => {
+      try {
+        const fetchedCars = await fetchCars();
+        setCars(fetchedCars);
+      } catch (error) {
+        console.error('Failed to fetch cars:', error);
+      }
+    };
+
+    loadCars();
+  }, []);
 
   const toggleModal = useCallback(open => {
     setIsModalOpen(open);
