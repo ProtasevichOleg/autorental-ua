@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/autorental-ua/static/css/main.c58178e7.css",
-    "main.js": "/autorental-ua/static/js/main.fb8e1ce1.js",
-    "static/js/983.b6fdbea5.chunk.js": "/autorental-ua/static/js/983.b6fdbea5.chunk.js",
-    "static/js/13.e3d4959d.chunk.js": "/autorental-ua/static/js/13.e3d4959d.chunk.js",
-    "static/js/697.8489b9c8.chunk.js": "/autorental-ua/static/js/697.8489b9c8.chunk.js",
+    "main.js": "/autorental-ua/static/js/main.8edd91bb.js",
+    "static/js/983.3cd7352c.chunk.js": "/autorental-ua/static/js/983.3cd7352c.chunk.js",
+    "static/js/13.f2bde20b.chunk.js": "/autorental-ua/static/js/13.f2bde20b.chunk.js",
+    "static/js/697.a29bb096.chunk.js": "/autorental-ua/static/js/697.a29bb096.chunk.js",
     "static/js/279.5b20cdaf.chunk.js": "/autorental-ua/static/js/279.5b20cdaf.chunk.js",
     "static/media/Manrope-SemiBold.ttf": "/autorental-ua/static/media/Manrope-SemiBold.310f108cc524df0e5ffc.ttf",
     "static/media/Manrope-Medium.ttf": "/autorental-ua/static/media/Manrope-Medium.08894ccb04665d1a9d53.ttf",
@@ -12,14 +12,14 @@
     "static/media/sprite.svg": "/autorental-ua/static/media/sprite.3cebc0c8955b08bb020a2eaafb59ec96.svg",
     "index.html": "/autorental-ua/index.html",
     "main.c58178e7.css.map": "/autorental-ua/static/css/main.c58178e7.css.map",
-    "main.fb8e1ce1.js.map": "/autorental-ua/static/js/main.fb8e1ce1.js.map",
-    "983.b6fdbea5.chunk.js.map": "/autorental-ua/static/js/983.b6fdbea5.chunk.js.map",
-    "13.e3d4959d.chunk.js.map": "/autorental-ua/static/js/13.e3d4959d.chunk.js.map",
-    "697.8489b9c8.chunk.js.map": "/autorental-ua/static/js/697.8489b9c8.chunk.js.map",
+    "main.8edd91bb.js.map": "/autorental-ua/static/js/main.8edd91bb.js.map",
+    "983.3cd7352c.chunk.js.map": "/autorental-ua/static/js/983.3cd7352c.chunk.js.map",
+    "13.f2bde20b.chunk.js.map": "/autorental-ua/static/js/13.f2bde20b.chunk.js.map",
+    "697.a29bb096.chunk.js.map": "/autorental-ua/static/js/697.a29bb096.chunk.js.map",
     "279.5b20cdaf.chunk.js.map": "/autorental-ua/static/js/279.5b20cdaf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c58178e7.css",
-    "static/js/main.fb8e1ce1.js"
+    "static/js/main.8edd91bb.js"
   ]
 }
