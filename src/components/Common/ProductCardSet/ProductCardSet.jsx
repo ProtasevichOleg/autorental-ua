@@ -1,7 +1,10 @@
 import { useCallback, useEffect, useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
-import { StyledCardSet } from './ProductCardSet.styled';
-// import cars from 'assets/jsons/cars.json';
+import {
+  StyledCardSet,
+  LoadMoreButton,
+  ButtonWrapper,
+} from './ProductCardSet.styled';
 import { fetchCars } from 'api/api';
 import Modal from '../Modal/Modal';
 
@@ -9,19 +12,35 @@ const ProductCardSet = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCar, setSelectedCar] = useState(null);
   const [cars, setCars] = useState([]);
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(true);
 
   useEffect(() => {
     const loadCars = async () => {
       try {
-        const fetchedCars = await fetchCars();
-        setCars(fetchedCars);
+        const fetchedCars = await fetchCars(page);
+        if (fetchedCars.length > 0) {
+          setCars(prevCars => {
+            const newCars = fetchedCars.filter(
+              fetchedCar =>
+                !prevCars.some(prevCar => prevCar.id === fetchedCar.id)
+            );
+            return [...prevCars, ...newCars];
+          });
+        } else {
+          setHasMore(false);
+        }
       } catch (error) {
         console.error('Failed to fetch cars:', error);
       }
     };
 
     loadCars();
-  }, []);
+  }, [page]);
+
+  const loadMoreCars = () => {
+    setPage(prevPage => prevPage + 1);
+  };
 
   const toggleModal = useCallback(open => {
     setIsModalOpen(open);
@@ -59,6 +78,9 @@ const ProductCardSet = () => {
           />
         ))}
       </StyledCardSet>
+      {hasMore && (
+        <ButtonWrapper><LoadMoreButton onClick={loadMoreCars}>Load More</LoadMoreButton></ButtonWrapper>
+      )}
       {isModalOpen && <Modal car={selectedCar} toggleModal={toggleModal} />}
     </>
   );

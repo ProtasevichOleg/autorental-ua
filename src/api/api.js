@@ -1,17 +1,12 @@
 import axios from 'axios';
 
-const apiClient = axios.create({
-  baseURL: 'https://648884700e2469c038fde8b8.mockapi.io/',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
-
-export const fetchCars = async () => {
+export const fetchCars = async page => {
   try {
-    const response = await apiClient.get('adverts');
+    const response = await axios.get(
+      `https://648884700e2469c038fde8b8.mockapi.io/adverts?page=${page}&limit=8`
+    );
     return response.data;
   } catch (error) {
-    throw error;
+    console.error('There was an error fetching the cars:', error);
   }
 };
