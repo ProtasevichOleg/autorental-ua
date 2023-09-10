@@ -1,0 +1,26 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="menu" viewBox="0 0 34 34">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M4.25 17H29.75" />
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M4.25 8.5H29.75" />
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M4.25 25.5H29.75" />
+        </symbol>
+        <symbol id="close" viewBox="0 0 32 32">
+            <path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.1" d="M6.276 4.391l-1.885 1.885 9.724 9.724-9.724 9.724 1.885 1.885 9.724-9.724 9.724 9.724 1.885-1.885-9.724-9.724 9.724-9.724-1.885-1.885-9.724 9.724-9.724-9.724z"></path>
+        </symbol>
+        <symbol id="chevron-down" viewBox="0 0 32 32">
+            <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M8 12l8 8 8-8"></path>
+        </symbol>
+        <symbol id="gallery" viewBox="0 0 32 32">
+            <path fill="currentColor" stroke-width="0" d="M10.667 5.333c-0.696 0-1.413 0.247-1.917 0.751-0.501 0.503-0.749 1.22-0.749 1.916v1.333h2.667v-1.333h16v9.333h-1.333v2.667h1.333c0.696 0 1.413-0.247 1.917-0.751 0.503-0.503 0.749-1.22 0.749-1.916v-9.333c0-0.696-0.247-1.413-0.751-1.917-0.503-0.501-1.219-0.749-1.916-0.749h-16zM5.333 10.667c-0.696 0-1.413 0.247-1.917 0.751-0.501 0.503-0.749 1.219-0.749 1.916v10.667c0 0.696 0.247 1.413 0.751 1.917 0.503 0.503 1.22 0.749 1.916 0.749h16c0.696 0 1.413-0.247 1.917-0.751 0.503-0.503 0.749-1.22 0.749-1.916v-10.667c0-0.696-0.247-1.413-0.751-1.917-0.503-0.503-1.219-0.749-1.916-0.749h-16zM5.333 13.333h16v10.667h-16v-10.667z"></path>
+        </symbol>
+        <symbol id="heart" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M27.787 6.148c-1.327-1.328-3.161-2.149-5.187-2.149s-3.859 0.821-5.187 2.149l-1.413 1.413-1.413-1.413c-1.325-1.315-3.151-2.128-5.166-2.128-4.051 0-7.335 3.284-7.335 7.335 0 2.015 0.813 3.841 2.128 5.167l11.786 11.784 11.787-11.787c1.328-1.327 2.149-3.161 2.149-5.187s-0.821-3.859-2.149-5.187l-0-0z"></path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 32 32">
+            <path fill="currentColor" stroke-width="0" d="M16 2.8l-14.667 13.2h4v12h9.333v-8h2.667v8h9.333v-12h4l-14.667-13.2zM16 6.388l8 7.2v11.745h-4v-8h-8v8h-4v-11.745l8-7.2z"></path>
+        </symbol>
+    </defs>
+</svg>
