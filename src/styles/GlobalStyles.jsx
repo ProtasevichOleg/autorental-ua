@@ -4,6 +4,8 @@ import 'modern-normalize';
 import ManropeRegular from '../assets/fonts/Manrope/Manrope-Regular.ttf';
 import ManropeMedium from '../assets/fonts/Manrope/Manrope-Medium.ttf';
 import ManropeSemiBold from '../assets/fonts/Manrope/Manrope-SemiBold.ttf';
+import MontserratRegular from '../assets/fonts/Montserrat/Montserrat-Regular.ttf';
+import MontserratSemiBold from '../assets/fonts/Montserrat/Montserrat-SemiBold.ttf';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -14,21 +16,37 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         font-style: normal;
     }
-
+    
     @font-face {
-        font-family: 'Manrope';
-        src: local('ManropeMedium'),
-        url(${ManropeMedium}) format('truetype');
-        font-weight: 500;
-        font-style: normal;
+      font-family: 'Manrope';
+      src: local('ManropeMedium'),
+      url(${ManropeMedium}) format('truetype');
+      font-weight: 500;
+      font-style: normal;
     }
-
+    
     @font-face {
-        font-family: 'Manrope';
-        src: local('ManropeSemiBold'),
-        url(${ManropeSemiBold}) format('truetype');
-        font-weight: 600;
-        font-style: normal;
+      font-family: 'Manrope';
+      src: local('ManropeSemiBold'),
+      url(${ManropeSemiBold}) format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Montserrat';
+      src: local('MontserratRegular'),
+      url(${MontserratRegular}) format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'Montserrat';
+      src: local('MontserratSemiBold'),
+      url(${MontserratSemiBold}) format('truetype');
+      font-weight: 600;
+      font-style: normal;
     }
 
   html, body {
@@ -81,5 +99,18 @@ export const GlobalStyle = createGlobalStyle`
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
   }
 `;

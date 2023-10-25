@@ -7,8 +7,8 @@ export const CloseButton = styled.button`
   padding: 0;
   border: none;
   cursor: pointer;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-color: transparent;
   stroke: currentColor;
 `;

@@ -1,15 +1,23 @@
 import ProductTags from '../ProductTags/ProductTags';
 import {
+  StyledCarModal,
+  CarModalContentWrapper,
+  ModalSection,
+  ModalSubSection,
+  ModalTitle,
+  ModalSectionTitle,
+  Picture,
   Image,
   ModalTagContainer,
-  ModalTitle,
-  StyledCarModal,
   CarModel,
   ModalDescription,
-  ModalThirdTitle,
+  ConditionList,
+  ConditionItem,
+  RentCarLink,
 } from './CarModal.styled';
 
 const CarModal = ({ car }) => {
+  console.log(car);
   const { rentalConditions } = car;
   const [firstCondition, secondCondition, thirdCondition] =
     rentalConditions.split('\n');
@@ -37,6 +45,7 @@ const CarModal = ({ car }) => {
       return acc;
     }, {}),
   };
+
   const baseModalTags = {
     city,
     country,
@@ -50,47 +59,63 @@ const CarModal = ({ car }) => {
   return (
     car && (
       <StyledCarModal>
-        <picture>
-          <source srcSet={`${car.modalImage}, ${car.modalImage2x} 2x`} />
-          <Image
-            src={car.modalImage}
-            alt={`${car.make} ${car.model}`}
-            width="461"
-            height="248"
-          />
-        </picture>
+        <CarModalContentWrapper>
+          <ModalSection>
+            <ModalSubSection>
+              <ModalTitle>
+                {car.make}
+                <CarModel> {car.model}</CarModel>, {car.year}
+              </ModalTitle>
+              <ModalSectionTitle className="visually-hidden">
+                About Car
+              </ModalSectionTitle>
+              <ModalTagContainer $isOrdered>
+                <ProductTags elements={baseModalTags} />
+              </ModalTagContainer>
+            </ModalSubSection>
+            <Picture>
+              <source srcSet={`${car.modalImage}, ${car.modalImage2x} 2x`} />
+              <Image
+                src={car.modalImage}
+                alt={`${car.make} ${car.model}`}
+                width="461"
+                height="248"
+              />
+            </Picture>
+            <ModalDescription>{car.description}</ModalDescription>
+          </ModalSection>
 
-        <ModalTitle>
-          {car.make}
-          <CarModel> {car.model}</CarModel>, {car.year}
-        </ModalTitle>
-        <ModalTagContainer>
-          <ProductTags elements={baseModalTags} />
-        </ModalTagContainer>
-        <ModalDescription>{car.description}</ModalDescription>
+          <ModalSection>
+            <ModalSubSection>
+              <ModalSectionTitle>
+                Accessories and functionalities:
+              </ModalSectionTitle>
+              <ModalTagContainer>
+                <ProductTags elements={accessoriesAndFunctionalities} />
+              </ModalTagContainer>
+            </ModalSubSection>
+          </ModalSection>
+          <ModalSection>
+            <ModalSubSection>
+              <ModalSectionTitle>Rental Conditions:</ModalSectionTitle>
+              <ConditionList>
+                <ConditionItem>
+                  {firstConditionTitle}: <strong>{firstConditionValue}</strong>
+                </ConditionItem>
+                <ConditionItem>{secondCondition}</ConditionItem>
+                <ConditionItem>{thirdCondition}</ConditionItem>
+                <ConditionItem>
+                  Mileage: <strong>{car.mileage.toLocaleString()}</strong>
+                </ConditionItem>
+                <ConditionItem>
+                  Price: <strong>{car.rentalPrice}</strong>
+                </ConditionItem>
+              </ConditionList>
+            </ModalSubSection>
+          </ModalSection>
 
-        <div>
-          <ModalThirdTitle>Accessories and functionalities:</ModalThirdTitle>
-          <ModalTagContainer>
-            <ProductTags elements={accessoriesAndFunctionalities} />
-          </ModalTagContainer>
-        </div>
-        <ModalThirdTitle>Rental Conditions:</ModalThirdTitle>
-        <ul>
-          <li>
-            {firstConditionTitle}: <strong>{firstConditionValue}</strong>
-          </li>
-          <li>{secondCondition}</li>
-          <li>{thirdCondition}</li>
-          <li>
-            Mileage: <strong>{car.mileage}</strong>
-          </li>
-          <li>
-            Price: <strong>{car.price}</strong>
-          </li>
-        </ul>
-
-        <a href="tel:+380730000000">Rental Car</a>
+          <RentCarLink href="tel:+380730000000">Rental Car</RentCarLink>
+        </CarModalContentWrapper>
       </StyledCarModal>
     )
   );

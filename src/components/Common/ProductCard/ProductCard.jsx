@@ -18,18 +18,32 @@ import {
 import ProductTags from '../ProductTags/ProductTags';
 
 const ProductCard = ({ car, setIsModalOpen }) => {
-  const { address, id, year, type, fuelConsumption, engineSize } = car;
-  const [, city, country] = address.split(', ');
+  const {
+    address,
+    rentalCompany,
+    isPremium,
+    type,
+    showModelInsteadOfMake,
+    model,
+    make,
+    id,
+    favoriteAccessoryOrFunctionality,
+  } = car;
 
-  const baseModalTags = {
+  const [, city, country] = address.split(', ');
+  const modelOrMake = showModelInsteadOfMake ? model : make;
+
+  const onCardTags = [
     city,
     country,
-    id: `Id: ${id}`,
-    year: `Year: ${year}`,
-    type: `Type: ${type}`,
-    fuelConsumption: `Fuel Consumption: ${fuelConsumption}`,
-    engineSize: `Engine Size: ${engineSize}`,
-  };
+    rentalCompany,
+    ...(isPremium ? ['Premium'] : []),
+    type,
+    modelOrMake,
+    id,
+    favoriteAccessoryOrFunctionality,
+  ];
+
   return (
     <ProductCardStyled>
       <CardContentWrapper>
@@ -62,7 +76,7 @@ const ProductCard = ({ car, setIsModalOpen }) => {
             <Price>{car.rentalPrice}</Price>
           </TopDetails>
           <CardTagContainer>
-            <ProductTags elements={baseModalTags} />
+            <ProductTags elements={onCardTags} />
           </CardTagContainer>
         </CardDetails>
       </CardContentWrapper>

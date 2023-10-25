@@ -7,8 +7,9 @@
             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M4.25 8.5H29.75" />
             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M4.25 25.5H29.75" />
         </symbol>
-        <symbol id="close" viewBox="0 0 32 32">
-            <path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.1" d="M6.276 4.391l-1.885 1.885 9.724 9.724-9.724 9.724 1.885 1.885 9.724-9.724 9.724 9.724 1.885-1.885-9.724-9.724 9.724-9.724-1.885-1.885-9.724 9.724-9.724-9.724z"></path>
+        <symbol id="close" viewBox="0 0 24 24">
+            <path id="Vector" d="M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_2" d="M6 6L18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
         <symbol id="chevron-down" viewBox="0 0 32 32">
             <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M8 12l8 8 8-8"></path>

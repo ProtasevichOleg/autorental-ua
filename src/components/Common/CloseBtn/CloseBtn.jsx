@@ -1,10 +1,10 @@
-import { CloseButton, CloseIcon } from "./CloseBtn.styled";
+import { CloseButton, CloseIcon } from './CloseBtn.styled';
 import icon from 'assets/icons/sprite.svg';
 
-const CloseBtn = ({onClick}) => {
+const CloseBtn = ({ onClick }) => {
   return (
     <CloseButton onClick={onClick}>
-      <CloseIcon width="34" height="34">
+      <CloseIcon width="24" height="24">
         <use href={icon + '#close'}></use>
       </CloseIcon>
     </CloseButton>

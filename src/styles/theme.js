@@ -12,6 +12,8 @@ export const theme = {
   productCardBgColor:
     'linear-gradient(180deg, rgba(18, 20, 23, 0.5) 2.5%, rgba(18, 20, 23, 0) 41.07%), #f3f3f2',
 
+  cardBagesBgColor: '#F9F9F9',
+
   accentColor: '#3470FF',
   accentHoverColor: '#0B44CD',
 };
